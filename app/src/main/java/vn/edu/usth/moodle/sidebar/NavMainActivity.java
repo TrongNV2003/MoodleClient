@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -15,6 +16,8 @@ import com.google.android.material.navigation.NavigationView;
 
 import vn.edu.usth.moodle.R;
 import vn.edu.usth.moodle.mainhome.HomeActivity;
+import vn.edu.usth.moodle.sign.LoginActivity;
+import vn.edu.usth.moodle.sign.MainActivity;
 
 public class NavMainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -59,7 +62,9 @@ public class NavMainActivity extends AppCompatActivity implements NavigationView
         } else if (itemId == R.id.nav_settings) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new NavSettingActivity()).commit();
         } else if (itemId == R.id.nav_logout) {
-            Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(NavMainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show();
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
