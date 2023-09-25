@@ -17,7 +17,6 @@ import com.google.android.material.navigation.NavigationView;
 import vn.edu.usth.moodle.R;
 import vn.edu.usth.moodle.mainhome.HomeActivity;
 import vn.edu.usth.moodle.sign.LoginActivity;
-import vn.edu.usth.moodle.sign.MainActivity;
 
 public class NavMainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -56,7 +55,7 @@ public class NavMainActivity extends AppCompatActivity implements NavigationView
         } else if (itemId == R.id.nav_score) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new NavScoreActivity()).commit();
         } else if (itemId == R.id.nav_about) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new NavAboutActivity()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new NavFileActivity()).commit();
         } else if (itemId == R.id.nav_blog) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new NavBlogActivity()).commit();
         } else if (itemId == R.id.nav_settings) {

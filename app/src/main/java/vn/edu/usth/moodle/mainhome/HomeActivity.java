@@ -27,8 +27,8 @@ public class HomeActivity extends Fragment {
         tabLayout = view.findViewById(R.id.tab_layout);
         viewPager2 = view.findViewById(R.id.view_pager);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Home Page"));
-        tabLayout.addTab(tabLayout.newTab().setText("My Courses"));
+        tabLayout.addTab(tabLayout.newTab().setText("Site Home"));
+        tabLayout.addTab(tabLayout.newTab().setText("Dashboard"));
 
         FragmentManager fragmentManager = getChildFragmentManager();
         ViewPagerAdapter adapter = new ViewPagerAdapter(fragmentManager, getLifecycle());
