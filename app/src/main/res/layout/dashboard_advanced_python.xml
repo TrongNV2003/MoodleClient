@@ -18,17 +18,19 @@
         android:drawableLeft="@drawable/back"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"/>
+
     <TextView
         android:id="@+id/textView"
-        android:drawableLeft="@drawable/web_header"
-        android:layout_below="@id/back"
-        android:drawablePadding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/back"
         android:layout_marginStart="10dp"
-        android:text="Web Application Development"
+        android:drawableLeft="@drawable/mobile_header"
+        android:drawablePadding="20dp"
+        android:text="Mobile Application Development"
         android:textColor="#423D3D"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        app:drawableTint="#8865C8" />
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
@@ -45,15 +47,15 @@
         style="@style/Widget.Material3.MaterialTimePicker.Button"
         android:layout_width="380dp"
         android:layout_height="80dp"
+        android:layout_below="@id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/textView1"
         android:drawableLeft="@drawable/ic_forum"
-        android:text="News forum"
+        android:text="Announcements"
+        android:textAlignment="textStart"
         android:textColor="#555252"
         android:textSize="18sp"
         android:textStyle="normal"
-        android:textAlignment="textStart"
         app:iconPadding="15dp"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"/>
@@ -63,44 +65,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bachelor"
-        android:text="20 September - 26 September"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Introduction"
         android:textSize="21sp"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"/>
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Pandas: Python"
+        android:textSize="21sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/mobile_button2"
         style="@style/Widget.Material3.MaterialTimePicker.Button"
         android:layout_width="380dp"
         android:layout_height="80dp"
+        android:layout_below="@id/textView4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/textView2"
         android:drawableLeft="@drawable/ic_file"
-        android:text="1-Introduction to WWW"
+        android:text="Labwork #1"
+        android:textAlignment="textStart"
         android:textColor="#555252"
         android:textSize="18sp"
         android:textStyle="normal"
-        android:textAlignment="textStart"
-        app:iconPadding="15dp"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"/>
-
-    <Button
-        android:id="@+id/mobile_button3"
-        style="@style/Widget.Material3.MaterialTimePicker.Button"
-        android:layout_width="380dp"
-        android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/mobile_button2"
-        android:drawableLeft="@drawable/ic_file"
-        android:text="Reference"
-        android:textColor="#555252"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        android:textAlignment="textStart"
         app:iconPadding="15dp"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"/>
@@ -109,46 +104,63 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mobile_button3"
-        android:text="27 September - 3 October"
+        android:layout_below="@+id/mobile_button2"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Machine Learning with Python"
         android:textSize="21sp"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"/>
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/mobile_button3"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_file"
+        android:text="Labwork #2"
+        android:textAlignment="textStart"
+        android:textColor="#555252"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_button3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Text Mining"
+        android:textSize="21sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/mobile_button4"
         style="@style/Widget.Material3.MaterialTimePicker.Button"
         android:layout_width="380dp"
         android:layout_height="80dp"
+        android:layout_below="@+id/textView5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/textView3"
+        android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/ic_file"
-        android:text="2-HTML"
+        android:text="Labwork #3"
+        android:textAlignment="textStart"
         android:textColor="#555252"
         android:textSize="18sp"
         android:textStyle="normal"
-        android:textAlignment="textStart"
         app:iconPadding="15dp"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"/>
 
-    <Button
-        android:id="@+id/mobile_button5"
-        style="@style/Widget.Material3.MaterialTimePicker.Button"
-        android:layout_width="380dp"
-        android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/mobile_button4"
-        android:drawableLeft="@drawable/ic_file"
-        android:text="2-CSS"
-        android:textColor="#555252"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        android:textAlignment="textStart"
-        app:iconPadding="15dp"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"/>
+
+
+
+
+
 </RelativeLayout>

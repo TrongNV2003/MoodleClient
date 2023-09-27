@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +14,20 @@
         android:theme="@style/Theme.Moodle"
         tools:targetApi="31">
         <activity
-            android:name=".sign.LoginActivity"
+            android:name=".courseCategories.ICT"
+            android:exported="false" />
+        <activity
+            android:name=".courseCategories.Bachelor"
+            android:exported="false"
+            android:label="@string/title_activity_bachelor"
+            android:theme="@style/Theme.Moodle" />
+        <activity
+            android:name=".courseCategories.CourseCategories"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".SignInUp.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,32 +36,36 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".mainhome.MyCoursesActivity"
+            android:name=".SignInUp.SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mainHome.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mainHome.SiteHome"
+            android:exported="false" />
+        <activity
+            android:name=".mainHome.Dashboard"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".mainhome.HomePageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sign.MainActivity"
+            android:name=".Sidebar.NavMainActivity"
             android:exported="true" />
+
         <activity
-            android:name=".mainhome.HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".sidebar.NavMainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".dashboard.dashboardDatabases"
+            android:name=".Subjects.dashboardDatabases"
             android:exported="false" />
         <activity
-            android:name=".dashboard.dashboardMachineLearning"
+            android:name=".Subjects.dashboardMachineLearning"
             android:exported="false" />
         <activity
-            android:name=".dashboard.dashboardWebApp"
+            android:name=".Subjects.dashboardWebApp"
             android:exported="false" />
         <activity
-            android:name=".dashboard.dashboardMobileApp"
+            android:name=".Subjects.dashboardMobileApp"
+            android:exported="false" />
+        <activity
+            android:name=".Subjects.dashboardAdvancedPython"
             android:exported="false" />
 
         <meta-data

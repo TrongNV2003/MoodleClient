@@ -5,16 +5,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dashboard.dashboardMobileApp"
-    android:layout_marginStart="10dp">
+    tools:context=".Subjects.dashboardMobileApp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
 
+    <Button
+        android:id="@+id/back"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/back"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
     <TextView
         android:id="@+id/textView"
         android:drawableLeft="@drawable/mobile_header"
+        android:layout_below="@id/back"
         android:drawablePadding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
         android:text="Mobile Application Development"
         android:textColor="#423D3D"
@@ -31,7 +41,7 @@
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/mobile_button"
+        android:id="@+id/bachelor"
         style="@style/Widget.Material3.MaterialTimePicker.Button"
         android:layout_width="380dp"
         android:layout_height="80dp"
@@ -44,13 +54,15 @@
         android:textSize="18sp"
         android:textStyle="normal"
         android:textAlignment="textStart"
-        app:iconPadding="15dp"/>
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mobile_button"
+        android:layout_below="@+id/bachelor"
         android:text="Intro"
         android:layout_marginStart="10dp"
         android:textSize="21sp"
@@ -71,7 +83,9 @@
         android:textSize="18sp"
         android:textStyle="normal"
         android:textAlignment="textStart"
-        app:iconPadding="15dp"/>
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -98,7 +112,9 @@
         android:textSize="18sp"
         android:textStyle="normal"
         android:textAlignment="textStart"
-        app:iconPadding="15dp"/>
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
 
     <Button
         android:id="@+id/mobile_button4"
@@ -114,7 +130,9 @@
         android:textSize="18sp"
         android:textStyle="normal"
         android:textAlignment="textStart"
-        app:iconPadding="15dp"/>
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
 
     <Button
         android:id="@+id/mobile_button5"
@@ -130,7 +148,9 @@
         android:textSize="18sp"
         android:textStyle="normal"
         android:textAlignment="textStart"
-        app:iconPadding="15dp"/>
+        app:iconPadding="15dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"/>
 
 
 
