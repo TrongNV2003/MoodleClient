@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainHome.HomeActivity"
+    tools:context=".mainHome.FragmentHomeActivity"
     android:layout_marginStart="10dp">
 
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="700dp"/>
+            android:layout_height="670dp"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"

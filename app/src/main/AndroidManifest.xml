@@ -2,17 +2,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/moodle_original_logo_icon_146420"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/moodle_ic"
         android:supportsRtl="true"
         android:theme="@style/Theme.Moodle"
         tools:targetApi="31">
+        <activity
+            android:name=".courseCategories.ThirdYear.Courses.ComputerGraphic"
+            android:exported="false" />
+        <activity
+            android:name=".courseCategories.ThirdYear.CustomListView"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".courseCategories.ThirdYear.ThirdYear"
+            android:exported="false" />
+        <activity
+            android:name=".Subjects.MobileApp.MobileCourseIntroduction"
+            android:exported="false" />
+        <activity
+            android:name=".Sidebar.NavGrade.NavGradesFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Sidebar.NavFile.AddingActivity"
+            android:exported="false" />
         <activity
             android:name=".courseCategories.ICT"
             android:exported="false" />
@@ -24,8 +44,6 @@
         <activity
             android:name=".courseCategories.CourseCategories"
             android:exported="false" />
-
-
         <activity
             android:name=".SignInUp.LoginActivity"
             android:exported="true">
@@ -39,19 +57,18 @@
             android:name=".SignInUp.SignupActivity"
             android:exported="true" />
         <activity
-            android:name=".mainHome.HomeActivity"
+            android:name=".mainHome.FragmentHomeActivity"
             android:exported="true" />
         <activity
-            android:name=".mainHome.SiteHome"
+            android:name=".mainHome.FragmentSiteHome"
             android:exported="false" />
         <activity
-            android:name=".mainHome.Dashboard"
+            android:name=".mainHome.FragmentDashboard"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Sidebar.NavMainActivity"
             android:exported="true" />
-
         <activity
             android:name=".Subjects.dashboardDatabases"
             android:exported="false" />
@@ -62,7 +79,7 @@
             android:name=".Subjects.dashboardWebApp"
             android:exported="false" />
         <activity
-            android:name=".Subjects.dashboardMobileApp"
+            android:name=".Subjects.MobileApp.dashboardMobileApp"
             android:exported="false" />
         <activity
             android:name=".Subjects.dashboardAdvancedPython"

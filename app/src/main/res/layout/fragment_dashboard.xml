@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainHome.Dashboard">
+    tools:context=".mainHome.FragmentDashboard">
 
     <TextView
         android:id="@+id/textView"
@@ -113,26 +113,4 @@
         app:iconPadding="15dp"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"/>
-
-    <Button
-        android:id="@+id/python"
-        style="@style/Widget.Material3.MaterialTimePicker.Button"
-        android:layout_width="380dp"
-        android:layout_height="80dp"
-        android:drawableLeft="@drawable/web"
-        android:drawableRight="@drawable/more_3dot"
-        android:text="Applied Data Science with Python"
-        android:layout_below="@id/database"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:textColor="#555252"
-        android:textSize="18sp"
-        android:textAlignment="textStart"
-        app:iconPadding="15dp"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"/>
-
-
-
-
 </RelativeLayout>

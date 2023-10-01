@@ -1,4 +1,4 @@
-package vn.edu.usth.moodle.Sidebar;
+package vn.edu.usth.moodle.NavBottom;
 
 import android.os.Bundle;
 
@@ -11,12 +11,12 @@ import android.view.ViewGroup;
 import vn.edu.usth.moodle.R;
 
 
-public class NavFileActivity extends Fragment {
-
+public class MoreFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_nav_file, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_nav_bottom_more, container, false);
     }
 }

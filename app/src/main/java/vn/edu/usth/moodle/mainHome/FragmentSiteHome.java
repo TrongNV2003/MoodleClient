@@ -12,7 +12,7 @@ import android.widget.Button;
 import vn.edu.usth.moodle.R;
 import vn.edu.usth.moodle.courseCategories.CourseCategories;
 
-public class SiteHome extends Fragment {
+public class FragmentSiteHome extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

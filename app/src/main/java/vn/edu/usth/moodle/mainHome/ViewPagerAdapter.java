@@ -15,9 +15,9 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         if (position == 1){
-            return new Dashboard();
+            return new FragmentDashboard();
         }
-        return new SiteHome();
+        return new FragmentSiteHome();
     }
 
     @Override

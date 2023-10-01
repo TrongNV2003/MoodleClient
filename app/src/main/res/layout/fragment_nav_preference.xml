@@ -30,7 +30,7 @@
         android:layout_below="@id/notification"
         android:drawableLeft="@drawable/download_ic"
         android:drawableRight="@drawable/arrow_right"
-        android:text="Notifications"
+        android:text="Download file"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="16dp"

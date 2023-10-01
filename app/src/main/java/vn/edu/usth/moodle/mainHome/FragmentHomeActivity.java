@@ -12,8 +12,10 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
 
 import vn.edu.usth.moodle.R;
+import vn.edu.usth.moodle.databinding.FragmentHomeActivityBinding;
 
-public class HomeActivity extends Fragment {
+public class FragmentHomeActivity extends Fragment {
+
 
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
@@ -22,7 +24,7 @@ public class HomeActivity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_activity, container, false);
 
         tabLayout = view.findViewById(R.id.tab_layout);
         viewPager2 = view.findViewById(R.id.view_pager);

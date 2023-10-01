@@ -10,8 +10,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import vn.edu.usth.moodle.DatabaseHelper;
+import vn.edu.usth.moodle.MainActivity;
 import vn.edu.usth.moodle.R;
-import vn.edu.usth.moodle.Sidebar.NavMainActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
                 Boolean checkUserPass = databaseHelper.checkUsernamePassword(user, pass);
                 if(checkUserPass){
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, NavMainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(LoginActivity.this, "This account does not exist", Toast.LENGTH_SHORT).show();
