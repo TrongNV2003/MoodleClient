@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import vn.edu.usth.moodle.R;
-import vn.edu.usth.moodle.Subjects.dashboardDatabases;
-import vn.edu.usth.moodle.Subjects.dashboardMachineLearning;
-import vn.edu.usth.moodle.Subjects.MobileApp.dashboardMobileApp;
-import vn.edu.usth.moodle.Subjects.dashboardWebApp;
+import vn.edu.usth.moodle.Courses.dashboardDatabases;
+import vn.edu.usth.moodle.Courses.dashboardMachineLearning;
+import vn.edu.usth.moodle.Courses.MobileApp.dashboardMobileApp;
+import vn.edu.usth.moodle.Courses.dashboardWebApp;
 
 public class FragmentDashboard extends Fragment {
 

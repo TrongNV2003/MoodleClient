@@ -1,4 +1,4 @@
-package vn.edu.usth.moodle.Subjects;
+package vn.edu.usth.moodle.Courses;
 
 import androidx.appcompat.app.AppCompatActivity;
 

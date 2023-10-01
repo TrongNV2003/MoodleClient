@@ -13,7 +13,10 @@
         android:theme="@style/Theme.Moodle"
         tools:targetApi="31">
         <activity
-            android:name=".courseCategories.ThirdYear.Courses.ComputerGraphic"
+            android:name=".teacher.Teacher1"
+            android:exported="false" />
+        <activity
+            android:name=".Courses.ComputerGraphic"
             android:exported="false" />
         <activity
             android:name=".courseCategories.ThirdYear.CustomListView"
@@ -25,7 +28,7 @@
             android:name=".courseCategories.ThirdYear.ThirdYear"
             android:exported="false" />
         <activity
-            android:name=".Subjects.MobileApp.MobileCourseIntroduction"
+            android:name=".Courses.MobileApp.MobileCourseIntroduction"
             android:exported="false" />
         <activity
             android:name=".Sidebar.NavGrade.NavGradesFragment"
@@ -70,19 +73,19 @@
             android:name=".Sidebar.NavMainActivity"
             android:exported="true" />
         <activity
-            android:name=".Subjects.dashboardDatabases"
+            android:name=".Courses.dashboardDatabases"
             android:exported="false" />
         <activity
-            android:name=".Subjects.dashboardMachineLearning"
+            android:name=".Courses.dashboardMachineLearning"
             android:exported="false" />
         <activity
-            android:name=".Subjects.dashboardWebApp"
+            android:name=".Courses.dashboardWebApp"
             android:exported="false" />
         <activity
-            android:name=".Subjects.MobileApp.dashboardMobileApp"
+            android:name=".Courses.MobileApp.dashboardMobileApp"
             android:exported="false" />
         <activity
-            android:name=".Subjects.dashboardAdvancedPython"
+            android:name=".Courses.dashboardAdvancedPython"
             android:exported="false" />
 
         <meta-data

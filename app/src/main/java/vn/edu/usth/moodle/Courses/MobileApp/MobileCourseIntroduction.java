@@ -1,4 +1,4 @@
-package vn.edu.usth.moodle.Subjects.MobileApp;
+package vn.edu.usth.moodle.Courses.MobileApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import java.io.File;
 
 import vn.edu.usth.moodle.R;
 

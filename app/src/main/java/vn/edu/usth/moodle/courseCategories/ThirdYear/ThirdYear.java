@@ -4,37 +4,34 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-
 import vn.edu.usth.moodle.R;
-import vn.edu.usth.moodle.Sidebar.NavGrade.ListAdapterGrades;
-import vn.edu.usth.moodle.Sidebar.NavGrade.UserGrades;
-import vn.edu.usth.moodle.Subjects.MobileApp.dashboardMobileApp;
-import vn.edu.usth.moodle.Subjects.dashboardWebApp;
-import vn.edu.usth.moodle.courseCategories.ThirdYear.Courses.ComputerGraphic;
-import vn.edu.usth.moodle.databinding.DashboardMobileAppBinding;
-import vn.edu.usth.moodle.databinding.DashboardWebAppBinding;
+import vn.edu.usth.moodle.Courses.MobileApp.dashboardMobileApp;
+import vn.edu.usth.moodle.Courses.dashboardDatabases;
+import vn.edu.usth.moodle.Courses.dashboardMachineLearning;
+import vn.edu.usth.moodle.Courses.dashboardWebApp;
+import vn.edu.usth.moodle.Courses.ComputerGraphic;
 
 public class ThirdYear extends AppCompatActivity {
     String[] listCourses = {
             "Mobile Application Development",
             "Web Application Development",
+            "Machine Learning and Data Mining",
+            "Advanced Databases",
             "Computer Graphic (2022-2023)",
             "Introduction to cryptography",
             "Applied Data Science with Python",
             "Information Security",
-            "Advanced Databases",
-            "Machine Learning and Data Mining",
             "Distributed System",
             "Graph Theory"
             };
-    int[] pictureCourses = {R.drawable.database,R.drawable.machine,R.drawable.mobile, R.drawable.web,R.drawable.database,R.drawable.machine,R.drawable.mobile, R.drawable.web,R.drawable.database,R.drawable.machine};
+    int[] pictureCourses = {R.drawable.database,R.drawable.machine,R.drawable.mobile, R.drawable.web,
+            R.drawable.database,R.drawable.machine,R.drawable.mobile, R.drawable.web,R.drawable.database,
+            R.drawable.machine};
 
     ListView listView;
 
@@ -60,6 +57,14 @@ public class ThirdYear extends AppCompatActivity {
                     case "Web Application Development":
                         Intent webIntent = new Intent(ThirdYear.this, dashboardWebApp.class);
                         startActivity(webIntent);
+                        break;
+                    case "Machine Learning and Data Mining":
+                        Intent machineIntent = new Intent(ThirdYear.this, dashboardMachineLearning.class);
+                        startActivity(machineIntent);
+                        break;
+                    case "Advanced Databases":
+                        Intent databaseIntent = new Intent(ThirdYear.this, dashboardDatabases.class);
+                        startActivity(databaseIntent);
                         break;
                     case "Computer Graphic (2022-2023)":
                         Intent computerGraphicIntent = new Intent(ThirdYear.this, ComputerGraphic.class);

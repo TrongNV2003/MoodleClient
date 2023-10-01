@@ -1,4 +1,4 @@
-package vn.edu.usth.moodle.Subjects;
+package vn.edu.usth.moodle.Courses;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,18 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
 import vn.edu.usth.moodle.R;
 
-
-public class dashboardDatabases extends AppCompatActivity {
+public class dashboardWebApp extends AppCompatActivity {
 
     Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard_databases);
+        setContentView(R.layout.dashboard_web_app);
 
         back = findViewById(R.id.back);
 
@@ -27,6 +25,5 @@ public class dashboardDatabases extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
     }
 }
