@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,19 @@
         android:theme="@style/Theme.Moodle"
         tools:targetApi="31">
         <activity
-            android:name=".teacher.Teacher1"
+            android:name=".teacher_info.DetailTeacher1.BadgesTeacher1"
+            android:exported="false" />
+        <activity
+            android:name=".teacher_info.DetailTeacher1.BlogTeacher1"
+            android:exported="false" />
+        <activity
+            android:name=".teacher_info.DetailTeacher1.DetailTeacher1"
+            android:exported="false" />
+        <activity
+            android:name=".teacher_info.Teacher2"
+            android:exported="false" />
+        <activity
+            android:name=".teacher_info.DetailTeacher1.Teacher1"
             android:exported="false" />
         <activity
             android:name=".Courses.ComputerGraphic"
@@ -33,9 +47,7 @@
         <activity
             android:name=".Sidebar.NavGrade.NavGradesFragment"
             android:exported="false" />
-        <activity
-            android:name=".Sidebar.NavFile.AddingActivity"
-            android:exported="false" />
+
         <activity
             android:name=".courseCategories.ICT"
             android:exported="false" />
@@ -69,9 +81,7 @@
             android:name=".mainHome.FragmentDashboard"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".Sidebar.NavMainActivity"
-            android:exported="true" />
+
         <activity
             android:name=".Courses.dashboardDatabases"
             android:exported="false" />
@@ -83,9 +93,6 @@
             android:exported="false" />
         <activity
             android:name=".Courses.MobileApp.dashboardMobileApp"
-            android:exported="false" />
-        <activity
-            android:name=".Courses.dashboardAdvancedPython"
             android:exported="false" />
 
         <meta-data

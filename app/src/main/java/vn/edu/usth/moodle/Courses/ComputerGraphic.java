@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import vn.edu.usth.moodle.R;
-import vn.edu.usth.moodle.teacher.Teacher1;
+import vn.edu.usth.moodle.teacher_info.DetailTeacher1.Teacher1;
 
 public class ComputerGraphic extends AppCompatActivity {
 

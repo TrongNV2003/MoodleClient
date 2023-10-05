@@ -1,4 +1,4 @@
-package vn.edu.usth.moodle.teacher;
+package vn.edu.usth.moodle.teacher_info.DetailTeacher1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,15 +8,14 @@ import android.widget.Button;
 
 import vn.edu.usth.moodle.R;
 
-public class Teacher1 extends AppCompatActivity {
+public class BlogTeacher1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher1);
+        setContentView(R.layout.activity_blog_teacher1);
 
         Button back = findViewById(R.id.back);
-
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
