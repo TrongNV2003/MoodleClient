@@ -209,7 +209,7 @@
         app:layout_constraintGuide_begin="51dp" />
 
     <Button
-        android:id="@+id/login_google"
+        android:id="@+id/google"
         style="@style/Widget.Material3.MaterialTimePicker.Button"
         android:layout_width="350dp"
         android:layout_height="55dp"

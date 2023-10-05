@@ -148,12 +148,14 @@
         android:layout_marginLeft="15dp"/>
 
     <TextView
-        android:id="@+id/webpage"
-        android:layout_width="wrap_content"
+        android:id="@+id/loadWebsiteButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="https://nguyenhoangha.net"
         android:layout_below="@id/webpage_tit"
         android:textSize="21sp"
+        android:text="http://nguyenhoangha.net"
         android:textColor="#2196F3"
         android:layout_marginLeft="15dp"/>
+
+
 </RelativeLayout>

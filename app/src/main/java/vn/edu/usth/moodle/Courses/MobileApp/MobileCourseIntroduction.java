@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import vn.edu.usth.moodle.R;
 
@@ -29,27 +30,24 @@ public class MobileCourseIntroduction extends AppCompatActivity {
 
 
         Button openFiles = findViewById(R.id.open_btn);
+
+
+        // Set up a click listener for the button to open the link in the browser
         openFiles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFiles("1. intro.md.pdf");
+                // Define the URL you want to open
+                String url = "https://moodle.usth.edu.vn/pluginfile.php/9211/mod_resource/content/1/1.%20intro.md.pdf";
+
+                // Create an Intent to open the URL in the default web browser
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+                // Start the web browser activity
+                startActivity(intent);
             }
         });
     }
 
-    private void openFiles(String pdfFileName) {
-        Uri uri = Uri.parse("content://com.android.providers.downloads.documents/download/" + pdfFileName);
 
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setDataAndType(uri, "application/pdf");
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
-            try {
-                startActivity(intent);
-            } catch (ActivityNotFoundException e) {
-                // Handle the case where a PDF viewer app is not installed
-                // You can prompt the user to install a PDF viewer here
-            }
-        }
 
 }

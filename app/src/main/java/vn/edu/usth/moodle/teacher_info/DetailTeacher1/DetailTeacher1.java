@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,19 +31,36 @@ public class DetailTeacher1 extends AppCompatActivity {
         });
 
         TextView email = findViewById(R.id.email);
-        email.setMovementMethod(LinkMovementMethod.getInstance());
+
+        // Set up a click listener for the button to open the link in the browser
         email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://youtu.be/JGFT6LKmczk?si=d_WWCbNPAWwQGzLJ";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                if (intent.resolveActivity(getPackageManager()) != null) {
+                // Define the URL you want to open
+                String urlEmail = "https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSHxwCnLLSlznLTGMQpbPgcFhFLQhBZTXhfmLnlfmkqHFdkwbmpnCWQtgKhzfbJbrSZnbPlX"; // Replace with your desired URL
 
-                    startActivity(intent);
-                } else {
+                // Create an Intent to open the URL in the default web browser
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlEmail));
 
-                    Toast.makeText(DetailTeacher1.this, "No web browser app found", Toast.LENGTH_SHORT).show();
-                }
+                // Start the web browser activity
+                startActivity(intent);
+            }
+        });
+
+        TextView openLinkButton = findViewById(R.id.loadWebsiteButton);
+
+        // Set up a click listener for the button to open the link in the browser
+        openLinkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Define the URL you want to open
+                String urlToOpen = "http://nguyenhoangha.net/"; // Replace with your desired URL
+
+                // Create an Intent to open the URL in the default web browser
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlToOpen));
+
+                // Start the web browser activity
+                startActivity(intent);
             }
         });
     }
