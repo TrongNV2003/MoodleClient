@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Moodle"
         tools:targetApi="31">
+        <activity
+            android:name=".Courses.MobileApp.MobileCourseNo2"
+            android:exported="false" />
         <activity
             android:name=".teacher_info.DetailTeacher1.BadgesTeacher1"
             android:exported="false" />
@@ -46,7 +50,6 @@
         <activity
             android:name=".Sidebar.NavGrade.NavGradesFragment"
             android:exported="false" />
-
         <activity
             android:name=".courseCategories.ICT"
             android:exported="false" />
@@ -80,7 +83,6 @@
             android:name=".mainHome.FragmentDashboard"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".Courses.dashboardDatabases"
             android:exported="false" />

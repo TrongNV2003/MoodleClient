@@ -17,11 +17,20 @@ public class dashboardMobileApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_mobile_app);
 
-        Button intro = findViewById(R.id.intro);
-        intro.setOnClickListener(new View.OnClickListener() {
+        Button courseNo1 = findViewById(R.id.intro);
+        courseNo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(dashboardMobileApp.this, MobileCourseIntroduction.class);
+                startActivity(intent);
+            }
+        });
+
+        Button CourseNo2 = findViewById(R.id.courseNo2);
+        CourseNo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(dashboardMobileApp.this, MobileCourseNo2.class);
                 startActivity(intent);
             }
         });
