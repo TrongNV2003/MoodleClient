@@ -15,6 +15,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import vn.edu.usth.moodle.DatabaseHelper;
 import vn.edu.usth.moodle.R;
@@ -33,7 +39,7 @@ public class SignupActivity extends AppCompatActivity {
 
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
-        email = (EditText) findViewById(R.id.email);
+        email = findViewById(R.id.email);
         re_password = findViewById(R.id.repassword);
         signup = findViewById(R.id.signup);
         login = findViewById(R.id.signin);
@@ -42,9 +48,18 @@ public class SignupActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        FirebaseUser fUser = mAuth.getCurrentUser();
+        String mail = email.getText().toString();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        DocumentReference userRef = db.collection("users").document(fUser.getUid());
+
+        Map<String, Object> userData = new HashMap<>();
+        userData.put("email", mail);
+        userRef.set(userData, SetOptions.merge());
+
         signup.setOnClickListener(view -> {
             String user = username.getText().toString();
-            String mail = email.getText().toString();
+//            String mail = email.getText().toString();
             String pass = password.getText().toString();
             String repass = re_password.getText().toString();
 
@@ -70,27 +85,13 @@ public class SignupActivity extends AppCompatActivity {
                                     }
                                 }
                             });
-//
-//                    Boolean checkUser = databaseHelper.checkUsername(user);
-//                    if(!checkUser){
-//                        Boolean insert = databaseHelper.insertData(user,pass);
-//                        if(insert){
-//                            Toast.makeText(SignupActivity.this, "Register successfully", Toast.LENGTH_SHORT).show();
-//                            Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
-//                            startActivity(intent);
-//                            finish();
-//                        }else{
-//                            Toast.makeText(SignupActivity.this, "Register failed", Toast.LENGTH_SHORT).show();
-//                        }
-//                    }else{
-//                        Toast.makeText(SignupActivity.this, "This account already exists", Toast.LENGTH_SHORT).show();
-//                    }
                 }
                 else{
                     Toast.makeText(SignupActivity.this, "Password are not matching", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
 
         login.setOnClickListener(view -> {
             Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
