@@ -85,7 +85,8 @@
         android:drawablePadding="15dp"
         android:gravity="center_vertical"
         android:text="Details"
-        android:textSize="21dp"/>
+        android:textSize="21dp"
+        android:cursorVisible="true"/>
 
     <TextView
         android:id="@+id/badge"
@@ -100,7 +101,8 @@
         android:drawablePadding="15dp"
         android:gravity="center_vertical"
         android:text="Badges"
-        android:textSize="21dp"/>
+        android:textSize="21dp"
+        android:cursorVisible="true"/>
 
     <TextView
         android:id="@+id/blog_entries"
@@ -116,5 +118,6 @@
         android:drawablePadding="15dp"
         android:gravity="center_vertical"
         android:text="Blog entries"
-        android:textSize="21dp"/>
+        android:textSize="21dp"
+        android:cursorVisible="true"/>
 </RelativeLayout>

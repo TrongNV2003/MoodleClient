@@ -12,6 +12,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -34,10 +36,12 @@ import vn.edu.usth.moodle.mainHome.FragmentHomeActivity;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
     BottomNavigationView bottomNavigationView;
+    NavigationView navigationView;
     FragmentManager fragmentManager;
 
     FirebaseAuth auth;
     FirebaseUser user;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +61,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         drawerLayout = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_drawer);
+        navigationView = findViewById(R.id.nav_drawer);
+        View headerView = navigationView.getHeaderView(0);
+        textView = headerView.findViewById(R.id.email123123);
+        textView.setText(user.getEmail());
+
+
         navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_nav,

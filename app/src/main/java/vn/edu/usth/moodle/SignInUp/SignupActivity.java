@@ -59,16 +59,16 @@ public class SignupActivity extends AppCompatActivity {
 
         signup.setOnClickListener(view -> {
             String user = username.getText().toString();
-//            String mail = email.getText().toString();
+            String Email = email.getText().toString();
             String pass = password.getText().toString();
             String repass = re_password.getText().toString();
 
-            if(TextUtils.isEmpty(user) || TextUtils.isEmpty(mail) || TextUtils.isEmpty(pass) || TextUtils.isEmpty(repass))
+            if(TextUtils.isEmpty(user) || TextUtils.isEmpty(Email) || TextUtils.isEmpty(pass) || TextUtils.isEmpty(repass))
                 Toast.makeText(SignupActivity.this, "All fields Required", Toast.LENGTH_SHORT).show();
             else{
                 if(pass.equals(repass)){
 
-                    mAuth.createUserWithEmailAndPassword(mail, pass)
+                    mAuth.createUserWithEmailAndPassword(Email, pass)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
